@@ -1,8 +1,15 @@
 import math
 
-s=(8+16+14)*(1/2)
-
+# El semiperímetro de un triángulo isósceles es la mitad de la suma de la longitud de todos los lados
+s = (8 + 16 + 14) * (1 / 2)
 print(s)
 
-r=math.sqrt(s*(s-8)*(s-16)*(s-14))/s
+Sa = 8  # Semiperimetro lado a
+Sb = 16  # Semiperimetro lado b
+Sc = 14  # Semiperimetro lado c
+
+# Formula =
+# Inradius = sqrt((Semiperímetro-Lado a)*(Semiperímetro-Lado B)*(Semiperímetro-Lado C)/Semiperímetro)
+
+r = math.sqrt(s * (s - Sa) * (s - Sb) * (s - Sc)) / s
 print(r)
