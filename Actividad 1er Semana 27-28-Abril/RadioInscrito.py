@@ -1,15 +1,20 @@
 import math
 
-# El semiperímetro de un triángulo isósceles es la mitad de la suma de la longitud de todos los lados
-s = (8 + 16 + 14) * (1 / 2)
-print(s)
+# Valores que ingrese para el ejemplo
+# lado a = 10
+# lado b = 14
+# lado c = 12 No puede ser mayor a la suma del lado a y b
 
-Sa = 8  # Semiperimetro lado a
-Sb = 16  # Semiperimetro lado b
-Sc = 14  # Semiperimetro lado c
+a = int (input ('Ingrese el lado a: '))
+b = int (input ('Ingrese el lado b: '))
+c = int (input ('Ingrese el lado c: '))
+
+# El semiperímetro es la mitad de la suma de la longitud de todos los lados
+s = (a + b + c) * (1 / 2)
+print("El semiperimetro es = ",s)
 
 # Formula =
 # Inradius = sqrt((Semiperímetro-Lado a)*(Semiperímetro-Lado B)*(Semiperímetro-Lado C)/Semiperímetro)
 
-r = math.sqrt(s * (s - Sa) * (s - Sb) * (s - Sc)) / s
-print(r)
+r = math.sqrt (s * (s - a) * (s - b) * (s - c)) / s
+print("El radio de la circunferencia inscrita en un triangulo es =",r)
