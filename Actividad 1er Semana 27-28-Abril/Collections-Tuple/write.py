@@ -7,11 +7,7 @@ WebDev = ('1.visual Studio Code','Visual Studio','Notepad++','IntelliJ','Vim',
        'RStudio','RubyMine','TextMate','Coda','Komodo','Zend',
        'Light Table')
 
-#con with open podemos trabajar con binarios ademas de wb(se utilza para escritura),
-#podria interpretarse como write bin ya que esa es la funcion, entonces se crea un
-#archivo .bin que llame Tuples y escribo lo que hay en WebDev ya que no se puede
-#abrir el contenido en binario si no que se utiliza mas como llamado a otra parte o
-#archivo de codigo.
+#Vertir datos de mi elemento 'WebDev' a un .bin
 with open ('Tuples.bin','wb') as fh:
     pickle.dump(WebDev,fh)
     
