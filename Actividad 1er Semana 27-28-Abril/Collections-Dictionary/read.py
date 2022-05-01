@@ -7,7 +7,7 @@ import pprint #para imprimir el dic de forma mas legible en terminal aunque no a
 with open('Dictionary.bin','rb') as fh:
     MovDev=pickle.load(fh)
     
-    #impresion de la coleccion
+    #impresion de los datos cargados a MovDev
     print(MovDev)
     #pprint.pprint(MovDev)
     print(type(MovDev))
