@@ -6,7 +6,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat May  7 22:15:32 2022
-
 @author: naran
 """
 import matplotlib.pyplot as plt
