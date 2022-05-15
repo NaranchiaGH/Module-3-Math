@@ -15,20 +15,20 @@ x0 = 2.45
 
 h1 = 0.5
 v1 = (f(x0+h1)-f(x0))/h1
-print('r1 =', v1)
+print('valor 1 =', v1)
 
 h2 = 0.3
 v2 = (f(x0+h2)-f(x0))/h2
-print('r2 =', v2)
+print('valor 2 =', v2)
 
 h3 = 0.1
 v3 = (f(x0+h3)-f(x0))/h3
-print('r3 =', v3)
+print('valor 3 =', v3)
 
 h4 = 0.001
 v4 = (f(x0+h4)-f(x0))/h4
-print('r4 =', v4, "\n")
+print('valor 4 =', v4, "\n")
 
 h5 = 0.00001
 v5 = (f(x0+h5)-f(x0))/h5
-print('r5 =', v5)
+print('valor 5 =', v5)
