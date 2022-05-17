@@ -29,7 +29,3 @@ x3 = x2-f(x2)/f2(x2)
 print('x3= ', x3)
 
 print("La raiz de e^(2-x)-7x=0 es: ", x3)
-
-#xplt = [-2, -1, 0, 1, 2]
-#yplt = [-61.59, -27.08, -14.38, -9.71, 8]
-#print(plt.scatter(xplt, yplt))
