@@ -5,7 +5,7 @@ Created on Mon May 9 22:12:38 2022
 @author: naran
 """
 # Estimar el polinomio interpolante donde, (-1,3), (0,-7), (4,7) y (5,11)
-# utiliza numpy
+# utilizar libreria numpy
 import numpy as np
 from scipy.interpolate import lagrange
 
