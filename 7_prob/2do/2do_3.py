@@ -7,11 +7,24 @@ Probabilidades
 # en.wikipedia.org/wiki/Probability_distribution
 #
 # 2do_3
-# gaussian distribution
+# betavariate and gaussian distribution
 """
 import random
 import matplotlib.pyplot as plt
 
+# betavariate
+# random.betavariate(alpha, beta)
+nums = []
+bajo = 10
+alto = 100
+mode = 20
+for i in range(100):
+    temp = random.betavariate(5, 10)
+    nums.append(temp)
+plt.plot(nums)
+plt.show()
+
+# Gauss
 # almacenando los números aleatorios en una lista
 nums = []
 mu = 100  # media
