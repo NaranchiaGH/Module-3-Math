@@ -17,6 +17,7 @@ nums = []
 mu = 100  # media
 sigma = 50  # Desviacion estandar
 
+# Generando aleatorios
 for i in range(10000):
     temp = random.gauss(mu, sigma)
     nums.append(temp)
