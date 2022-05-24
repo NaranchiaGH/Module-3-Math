@@ -11,12 +11,9 @@ import pandas as pd
 
 iris = pd.read_csv(
     'https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv')
-# vs
-# iris = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/bezdekIris.data')
-print('head', iris.head())
 
 """
-Lista, convert 1st variable as tuple <-------------
+Lista, convert 1st variable as List <-------------
 """
 list_tarea = iris['sepal length'].tolist()
 print('Sepal length:', list_tarea, type(list_tarea))
@@ -24,15 +21,27 @@ print('Sepal length:', list_tarea, type(list_tarea))
 """
 Dict, convert 2nd variable as dictionary <-------------
 """
-dic = iris.set_index('sepal width').to_dict('list')
-print('Sepal width:', dic, type(dic))
+dict_from_csv = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',usecols = ['sepal width']).to_dict()
+print(dict_from_csv)
 
 """
-Tuple, convert 3rd variable as list <-------------
+Tuple, convert 3rd variable as Tuple <-------------
 """
-tupla = iris['petal length'].tolist()
-tupla = tuple(tupla)
-print('petal length:', tupla, type(tupla))
+irisTUP = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',usecols = ['sepal length'])
+dataTUP = []
+for i in irisTUP.index:
+    dataTUP.append(tuple(irisTUP.values[i]))
+allnodes = tuple(dataTUP)
+print(allnodes)
+
+#
+#
+#
+#
+#
+#
+#
+#
 
 #
 # metadata
