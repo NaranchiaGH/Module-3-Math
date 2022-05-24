@@ -4,13 +4,9 @@
 # convert 3rd variable as list
 #
 #
-import statsmodels.api as sm
-from pandas.plotting import scatter_matrix
-import matplotlib.pyplot as plt
 import pandas as pd
 
-iris = pd.read_csv(
-    'https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv')
+iris = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv')
 
 """
 Lista, convert 1st variable as List <-------------
@@ -21,18 +17,20 @@ print('Sepal length:', list_tarea, type(list_tarea))
 """
 Dict, convert 2nd variable as dictionary <-------------
 """
-dict_from_csv = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',usecols = ['sepal width']).to_dict()
+dict_from_csv = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv', usecols=['sepal width']).to_dict()
 print(dict_from_csv)
+print(type(dict_from_csv))
 
 """
 Tuple, convert 3rd variable as Tuple <-------------
 """
-irisTUP = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',usecols = ['sepal length'])
+irisTUP = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv', usecols=['sepal length'])
 dataTUP = []
 for i in irisTUP.index:
     dataTUP.append(tuple(irisTUP.values[i]))
 allnodes = tuple(dataTUP)
 print(allnodes)
+print(type(allnodes))
 
 #
 #
